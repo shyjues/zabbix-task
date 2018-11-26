@@ -1,0 +1,26 @@
+--- 
+- hosts: localhost
+
+  tasks:
+   - name: testhost NSW
+     local_action:
+       module: zabbix_host
+       server_url: http://localhost/
+       login_user: Admin
+       login_password: zabbix
+       host_name: testhost.nsw.education
+       host_groups:
+         - Discovered hosts
+       visible_name: testhost.nsw.education
+       description: test host NSW DET
+       status: enabled
+       state: present
+       force: true
+       interfaces:
+         - type: 1
+           main: 1
+           useip: 0
+           ip: '10.0.0.0'
+           dns: 'test.test.com'
+           port: 10050
+

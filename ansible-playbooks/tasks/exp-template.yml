@@ -1,0 +1,19 @@
+---
+- hosts: localhost
+
+  tasks:
+  # Export template json definition
+   - name: Zabbix template export
+     local_action: 
+       module: zabbix_template
+       server_url: http://localhost/
+       login_user: Admin
+       login_password: zabbix
+       template_name: Template App Zabbix Agent
+       state: dump
+     register: template_dump
+   
+   - name: wite to file
+     copy:
+       content: "{{template_dump}}"
+       dest: "output.json"

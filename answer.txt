@@ -1,0 +1,9 @@
+According to me for these tasks which has built in modules in ansible its 
+always advisable to use ansible playbooks. If we do need to something not available 
+then we can easily extend the tasks and use Python. 
+
+From my experience any custom code would require more effort and there would
+be definitely scenarios which would be missed. These would create more issues. 
+Ansible is a framework which would fill this gap and help us save effort for
+all config management.
+
