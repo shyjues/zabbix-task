@@ -1,7 +1,9 @@
 # Zabbix Project - Task
 
-This repository contains files for building docker images of docker applicance with a ubuntu image. For the full repo with all the flavours refer to the below repository.
+This repository contains files for building the zabbix-applicance as a ubuntu image. 
+Also, provided are a set of ansible playbooks for executing specific tasks.
 
+For the full repo with all the flavours refer to the below repository:
 https://github.com/zabbix/zabbix-docker
 
 
@@ -30,6 +32,8 @@ GitBash or git to be available to clone the repository.
 
 
 ### Installing
+
+Clone this git repository in a newly created folder/directory.
 
 Given below is the step by step instructions for running this project
 
